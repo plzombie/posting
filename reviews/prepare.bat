@@ -1,1 +1,1 @@
-set MARKDOWN_DIR=f:\NotMyProjects\Markdown_1.0.1\
+set MARKDOWN_DIR=c:\Markdown_1.0.1\
