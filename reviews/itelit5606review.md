@@ -118,7 +118,7 @@ To Be Continued
 
 ![Аккумулятор](itelit5606review_accum.jpg)
 
-За аккумулятором скрываются два слота для карты Mini-SIM и один для карты памяти microSD. 
+За аккумулятором расположены два слота для карты Mini-SIM и один для карты памяти microSD. 
 
 ![Под крышкой](itelit5606review_unboxed1.jpg)
 
