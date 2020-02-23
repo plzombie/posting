@@ -11,6 +11,7 @@ install:
   - cmd: 7z e -o"c:\Markdown_1.0.1\"  "c:\Markdown_1.0.1\markdown.zip" "Markdown_1.0.1\*"
 
 build_script:
+  - cmd: git checkout gh-pages
   - cmd: cd reviews
   - cmd: makeall.bat
   - cmd: cd ..
