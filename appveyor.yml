@@ -6,16 +6,16 @@ version: '{build}'
 skip_non_tags: true
 
 install:
-  - cmd:
-      mkdir c:\Markdown_1.0.1\
-      curl https://daringfireball.net/projects/downloads/Markdown_1.0.1.zip --output "c:\Markdown_1.0.1\markdown.zip"
-      7z e -o"c:\Markdown_1.0.1\"  "c:\Markdown_1.0.1\markdown.zip" "Markdown_1.0.1\*"
+  - cmd: mkdir c:\Markdown_1.0.1\
+  - cmd: curl https://daringfireball.net/projects/downloads/Markdown_1.0.1.zip --output "c:\Markdown_1.0.1\markdown.zip"
+  - cmd: 7z e -o"c:\Markdown_1.0.1\"  "c:\Markdown_1.0.1\markdown.zip" "Markdown_1.0.1\*"
 
 build_script:
   - cmd: reviews\makeall.bat
 
 on_finish:
-  - cmd:
-      git commit -a -m "Upload html"
-      git push
+  - cmd: git status
+  - cmd: git add reviews\itelit5606review.html
+  - cmd: git commit -m "Upload html"
+  - cmd: git push
   
