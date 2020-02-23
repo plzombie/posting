@@ -13,6 +13,7 @@ install:
 build_script:
   - cmd: cd reviews
   - cmd: makeall.bat
+  - cmd: cd ..
 
 on_finish:
   - cmd: git status
