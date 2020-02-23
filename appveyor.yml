@@ -1,0 +1,21 @@
+image:
+  - Visual Studio 2017
+
+version: '{build}'
+
+skip_non_tags: true
+
+install:
+  - cmd:
+      mkdir c:\Markdown_1.0.1\
+      curl https://daringfireball.net/projects/downloads/Markdown_1.0.1.zip --output "c:\Markdown_1.0.1\markdown.zip"
+      7z e -o"c:\Markdown_1.0.1\"  "c:\Markdown_1.0.1\markdown.zip" "Markdown_1.0.1\*"
+
+build_script:
+  - cmd: reviews\makeall.bat
+
+on_finish:
+  - cmd:
+      git commit -a -m "Upload html"
+      git push
+  
