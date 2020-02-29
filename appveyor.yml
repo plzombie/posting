@@ -24,8 +24,8 @@ on_success:
   - cmd: git status
   - cmd: git add reviews\itelit5606review.html
   - cmd: git commit -m "Upload html"
-  - cmd: echo git push origin gh-pages
-  - cmd: type %HOMEDRIVE%%HOMEPATH%\.git-credentials
+  - cmd: git push origin gh-pages
 
 environment:
-  access_token: 12345
+  access_token:
+	secure: AhnJiiGkrA7nY5vIn+YSC2D5NS80zs/K00dkmQan1kPuZGcxsQgos7IgPvd9W8/v
