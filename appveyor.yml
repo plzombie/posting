@@ -23,10 +23,8 @@ on_success:
   - cmd: git add reviews\itelit5606review.html
   - cmd: git commit -m "Upload html"
   - cmd: git remote rm origin
-  - cmd: git remote add origin https://plzombie@github.com/plzombie/posting.git
+  - cmd: git remote add origin https://plzombie:%access_token%@github.com/plzombie/posting.git
   - cmd: git remote show origin
-  - cmd: git config --global credential.helper store
-  - cmd: echo https://plzombie:%access_token%@github.com`n >> %HOMEDRIVE%%HOMEPATH%\.git-credentials
   - cmd: git push origin gh-pages
 
 environment:
