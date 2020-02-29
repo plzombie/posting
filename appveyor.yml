@@ -24,9 +24,8 @@ on_success:
   - cmd: git commit -m "Upload html"
   - cmd: git remote rm origin
   - cmd: git remote add origin https://plzombie:%access_token%@github.com/plzombie/posting.git
-  - cmd: git remote show origin
   - cmd: git push origin gh-pages
 
 environment:
   access_token:
-    secure: AhnJiiGkrA7nY5vIn+YSC2D5NS80zs/K00dkmQan1kPuZGcxsQgos7IgPvd9W8/v
+    secure: 93YHi8IV+gYwnZdy5USSDTkj5NfNFzFLBatIG7KczvWA6LFjf0r3UM8Il0I/ijNS
