@@ -24,9 +24,9 @@ on_success:
   - cmd: git status
   - cmd: git add reviews\itelit5606review.html
   - cmd: git commit -m "Upload html"
-  - cmd: echo git remote rm origin
-  - cmd: echo git remote add origin https://plzombie@github.com/plzombie/posting.git
-  - cmd: echo git remote show origin
+  - cmd: git remote rm origin
+  - cmd: git remote add origin https://plzombie@github.com/plzombie/posting.git
+  - cmd: git remote show origin
   - cmd: git push origin gh-pages
 
 environment:
