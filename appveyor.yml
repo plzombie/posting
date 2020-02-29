@@ -19,7 +19,13 @@ build_script:
 on_success:
   - cmd: git config --global user.name "Mikhail Morozov"
   - cmd: git config --global user.email "plzombie@yandex.ru"
+  - cmd: git config --global credential.helper store
+  - cmd: echo https://%access_token%:x-oauth-basic@github.com >> %HOMEDRIVE%%HOMEPATH%\.git-credentials
   - cmd: git status
   - cmd: git add reviews\itelit5606review.html
   - cmd: git commit -m "Upload html"
   - cmd: git push origin gh-pages
+  - type %HOMEDRIVE%%HOMEPATH%\.git-credentials
+
+environment:
+  access_token: 12345
