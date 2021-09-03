@@ -108,7 +108,7 @@ Unihertz Jelly 2 – третий смартфон в линейке Jelly, вы
 Теперь посмотрим на результаты тестов 3dmark.
 
 <table>
-<th><td></td><td>Общая</td><td>Graphics</td><td>Physics</td></th>
+<tr><th></th><th>Общая</th><th>Graphics</th><th>Physics</th></tr>
 <tr><td>Sling Shot</td><td>1691</td><td>1554</td><td>2445</td></tr>
 <tr><td>Sling Shot Extreme</td><td>1298</td><td>1142</td><td>2493</td></tr>
 <tr><td>Wild Life</td><td>644</td><td></td><td></td></tr>
