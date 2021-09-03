@@ -21,6 +21,8 @@ on_success:
   - cmd: git config --global user.email "plzombie@yandex.ru"
   - cmd: git status
   - cmd: git add reviews\itelit5606review.html
+  - cmd: git add reviews\jelly2review.html
+  - cmd: git add reviews\jelly2review_photos.html
   - cmd: git commit -m "Upload html"
   - cmd: git remote rm origin
   - cmd: git remote add origin https://plzombie:%access_token%@github.com/plzombie/posting.git
